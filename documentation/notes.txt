@@ -1,0 +1,3 @@
+- laravel herd initialize korar pore postgre sql install korte hobe.
+- herd er file path thik korte hoy
+- herd er filepath e new project create korle database link korte hoy
