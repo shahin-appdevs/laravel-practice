@@ -15,7 +15,8 @@
                             <td class="px-6 py-4 text-right">
                                 <a href="/admin/projects/{{ $project->id }}/edit" class="text-sm font-semibold text-indigo-600 hover:text-indigo-800">Edit</a>
                                 <form method="POST" action="/admin/projects/{{ $project->id }}" class="inline">
-                                  
+                                  @csrf
+                                  @method('DELETE')
                                    
                                     <button class="ml-4 text-sm font-semibold text-red-600 hover:text-red-800">Delete</button>
                                 </form>

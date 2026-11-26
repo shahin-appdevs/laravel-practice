@@ -21,7 +21,14 @@
                 <div class="p-5">
                     <h3 class="text-lg font-semibold">{{$project->title}}</h3>
                     <p class="mt-2 text-sm leading-6 text-stone-600">{{$project->description}}</p>
-                    <a href="{{$project->link}}" class="mt-4 inline-block text-sm font-semibold text-indigo-600 hover:text-indigo-800">View project &rarr;</a>
+                    @if($project->github_url)
+                    <a href="{{$project->github_url}}" target="_blank" class="mt-4 inline-block text-sm font-semibold text-indigo-600 hover:text-indigo-800">View on GitHub &rarr;</a>
+
+                    @endif
+                    @if ($project->live_url)
+                        
+                    <a href="{{$project->live_url}}" target="_blank" class="mt-4 inline-block text-sm font-semibold text-indigo-600 hover:text-indigo-800">View project &rarr;</a>
+                    @endif
                 </div>
             </div>
 

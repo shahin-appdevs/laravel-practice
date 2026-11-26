@@ -13,6 +13,7 @@
             <div class="flex items-center gap-8 text-sm font-medium text-stone-600">
                 <a href="/" class="hover:text-stone-900">Home</a>
                 <a href="/about" class="hover:text-stone-900">About</a>
+                <a href="/admin/projects" class="hover:text-stone-900">Admin</a>
             </div>
         </nav>
     </header>

@@ -19,7 +19,9 @@ Route::get("/about", function () {
 
 
 
-Route::resource('admin/projects', ProjectController::class)->except(['show']); //projects/admin is the route prefix for the resource controller
+Route::resource('admin/projects', ProjectController::class)
+->except(['show'])
+->middleware('auth.basic'); //projects/admin is the route prefix for the resource controller
 
 
 ;
